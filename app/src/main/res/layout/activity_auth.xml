@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AuthActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="35dp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Feedback System"
+                android:inputType="phone"
+                android:textSize="40dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <EditText
+
+                    android:layout_marginTop="100dp"
+                   android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/shape"
+                    android:id="@+id/get_number"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter mobile number"
+                    android:inputType="phone" />
+
+                <Button
+                    android:inputType="number"
+                    android:elevation="10dp"
+                    android:background="@drawable/shape_button_green"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:id="@+id/btn_confirm_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Confirm" />
+
+
+                <EditText
+                    android:padding="5dp"
+                    android:background="@drawable/shape"
+                    android:textAlignment="center"
+                    android:id="@+id/get_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Verification code"
+                    android:inputType="number" />
+
+                <Button
+                    android:background="@drawable/shape_button_green"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:elevation="10dp"
+                    android:id="@+id/buttonVerifyCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:text="Verify" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
